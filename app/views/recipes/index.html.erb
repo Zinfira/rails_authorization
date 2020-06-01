@@ -1,0 +1,7 @@
+<h1>Rando Recipes</h1>
+<% @recipes["meals"].each do |meal| %>
+  <h2>Name: <%=meal["strMeal"]%></h2>
+  <h2>video instruction: <h4><a href="<%=meal["strYoutube"]%>">Link to Youtube</a></h4>
+  <br>
+  <p>If you want to see more recipes in depth, click here! <%= link_to "Recipes", new_recipe_path %></p>
+<% end %>

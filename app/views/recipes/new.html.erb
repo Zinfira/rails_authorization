@@ -1,0 +1,20 @@
+<h1>Rando Recipes</h1>
+
+<% @recipes["meals"].each do |meal|%>
+<ul>
+
+<h2>Name: <%=meal["strMeal"]%></h2>
+<br>
+<h3> Instructions:</h3> <p><%=meal["strInstructions"]%></p>
+<br>
+<h4>Ingredients: </h4>
+<p><%=meal["strIngredient1"]%></p>
+<p><%=meal["strIngredient2"]%></p>
+<p><%=meal["strIngredient3"]%></p>
+<p><%=meal["strIngredient4"]%></p>
+<p><%=meal["strIngredient5"]%> </p>
+<p><%=meal["strIngredient6"]%></p>
+<br>
+<h4><a href="<%=meal["strYoutube"]%>">Link to Youtube</a></h4>
+</ul>
+ <% end %>
