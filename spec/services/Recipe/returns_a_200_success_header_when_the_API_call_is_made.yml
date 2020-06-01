@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.themealdb.com/api/json/v<api_key>/<api_key>/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=<api_key>.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 0<api_key> Jun 2020 <api_key>8:4<api_key>:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d<api_key>3e<api_key>d85<api_key><api_key>3c2b02<api_key>24d8973bc6b22e20<api_key>59<api_key>036908;
+        expires=Wed, 0<api_key>-Jul-20 <api_key>8:4<api_key>:48 GMT; path=/; domain=.themealdb.com;
+        HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 03<api_key>2c9ac890000fda943bce20000000<api_key>
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59cb<api_key>2274c2dfda9-PDX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52855","strMeal":"Banana Pancakes","strDrinkAlternate":null,"strCategory":"Dessert","strArea":"American","strInstructions":"In
+        a bowl, mash the banana with a fork until it resembles a thick pur\u00e9e.
+        Stir in the eggs, baking powder and vanilla.\r\nHeat a large non-stick frying
+        pan or pancake pan over a medium heat and brush with half the oil. Using half
+        the batter, spoon two pancakes into the pan, cook for <api_key>-2 mins each
+        side, then tip onto a plate. Repeat the process with the remaining oil and
+        batter. Top the pancakes with the pecans and raspberries.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/sywswr<api_key>5<api_key><api_key>3838<api_key>4.jpg","strTags":"Breakfast,Desert,Sweet","strYoutube":"https:\/\/www.youtube.com\/watch?v=kSKtb2Sv-_U","strIngredient<api_key>":"Banana","strIngredient2":"Eggs","strIngredient3":"Baking
+        Powder","strIngredient4":"Vanilla Extract","strIngredient5":"Oil","strIngredient6":"Pecan
+        Nuts","strIngredient7":"Raspberries","strIngredient8":"","strIngredient9":"","strIngredient<api_key>0":"","strIngredient<api_key><api_key>":"","strIngredient<api_key>2":"","strIngredient<api_key>3":"","strIngredient<api_key>4":"","strIngredient<api_key>5":"","strIngredient<api_key>6":"","strIngredient<api_key>7":"","strIngredient<api_key>8":"","strIngredient<api_key>9":"","strIngredient20":"","strMeasure<api_key>":"<api_key>
+        large","strMeasure2":"2 medium","strMeasure3":"pinch","strMeasure4":"spinkling","strMeasure5":"<api_key>
+        tsp ","strMeasure6":"25g","strMeasure7":"<api_key>25g","strMeasure8":"","strMeasure9":"","strMeasure<api_key>0":"","strMeasure<api_key><api_key>":"","strMeasure<api_key>2":"","strMeasure<api_key>3":"","strMeasure<api_key>4":"","strMeasure<api_key>5":"","strMeasure<api_key>6":"","strMeasure<api_key>7":"","strMeasure<api_key>8":"","strMeasure<api_key>9":"","strMeasure20":"","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/banana-pancakes","dateModified":null}]}'
+  recorded_at: Mon, 01 Jun 2020 18:41:46 GMT
+recorded_with: VCR 6.0.0
